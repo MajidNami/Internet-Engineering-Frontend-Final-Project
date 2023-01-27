@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/app.css">
+    <title>Internet Engineering Course</title>
+</head>
+
+<body>
+    <div class="gray-bg" onclick="close_popup()"></div>
+    <img src="images/menu.png" alt="Menu Button" class="menu" width="30" onclick="show_menu()">
+    <ul id="menu">
+        <li class="menu-item" onclick="close_menu()"><a href="#">01 Start</a></li>
+        <li class="menu-item" onclick="close_menu()"><a href="#lectures">02 Lectures</a></li>
+        <li class="menu-item" onclick="close_menu()"><a href="#related-books">03 Related Books</a></li>
+    </ul>
+    <div id="header">
+        <p class="h1">Internet <br/> Engineering</p>
+        <p class="content">is what we are going to</p>
+        <p class="content">learn in this course</p>
+        <a href="#related-books">See this course related books</a>
+    </div>
+    <div id="lectures">
+        <img src="images/lectures3.jpeg" class="lecture-bg" alt="lectur background">
+        <div class="gradient"></div>
+        <div class="lecture">
+            <img src="images/http2.png" class="lecture-img" alt="http" width="128">
+            <h3 class="lecture-header">HTTP</h3>
+            <p class="lecture-content">
+                The Hypertext Transfer Protocol is an application layer protocol. Communication between client computers and web servers is done by sending HTTP Requests and recieving HTTP Response.
+            </p>
+        </div>
+        <div class="lecture">
+            <img src="images/html-css.png" class="lecture-img" alt="http" width="128">
+            <h3 class="lecture-header">HTML CSS</h3>
+            <p class="lecture-content">
+                The HyperText Markup Language or HTML is the standard markup language for web pages.Cascading Style Sheets is a language used for describing the presentation of a document written in a markup language such as HTML or XML.
+            </p>
+        </div>
+        <div class="lecture">
+            <img src="images/javascript.png" class="lecture-img" alt="http" width="128">
+            <h3 class="lecture-header">JavaScript</h3>
+            <p class="lecture-content">
+                JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior
+            </p>
+        </div>
+        <div class="lecture">
+            <img src="images/go.png" class="lecture-img" alt="http" width="128">
+            <h3 class="lecture-header">GOLANG</h3>
+            <p class="lecture-content">
+                Go is a statically typed, compiled programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson. It is syntactically similar to C, but with memory safety, garbage collection, structural typing, and CSP-style concurrency
+            </p>
+        </div>
+    </div>
+    <div id="related-books">
+            <div class="buy-popup">
+                <img src="images/close.png" class="close-btn" alt="Close btn" onclick="close_popup()">
+                <img src="images/header-bg.jpg" alt="Book Image" class="popup-img">
+                <div class="popup-content">
+                    <h2 class="popup-title">This is a title</h2>
+                    <p class="popup-warning">important - Please read this terms before buying the book</p>
+                    <div class="terms">
+                        <div class="term">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt laborum, et amet aliquam ex possimus iusto ea. Illum dolores molestiae nisi recusandae veniam enim in facere quos veritatis qui iure at iste, explicabo, quis aut, nam itaque fugit. Praesentium corporis vitae, magni optio assumenda modi perferendis fuga dolores iure?</div>
+                        <div class="term">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum sunt laborum, et amet aliquam ex possimus iusto ea. Illum dolores molestiae nisi recusandae veniam enim in facere quos veritatis qui iure at iste, explicabo, quis aut, nam itaque fugit. Praesentium corporis vitae, magni optio assumenda modi perferendis fuga dolores iure?</div>
+                    </div>
+                    <a href="#" class="buy" target="_blank">Buy Now</a>
+                </div>
+            </div>
+        <h2 class="related-books-title">Most Popular Books</h2>
+        <div class="books-container">
+            <div class="book">
+                <img src="images/js-book.webp" alt="JavaScript Book" class="book-img" width="128">
+                <div class="book-buy">
+                    <h2>
+                        <img src="images/money.png" alt="Cost" width="20">
+                        $37
+                    </h2>
+                    <button onclick="buy_popup('javascript')">
+                        <img src="images/shop.png" alt="Shop" width="20">
+                        Buy Now!
+                    </button>
+                </div>
+                <h3 class="book-title green-box">JavaScript Guide</h3>
+                <ul class="book-info-list">
+                    <li class="book-info seprator">By David Fianagan</li>
+                    <li class="book-info">Seventh Edition</li>
+                    <li class="book-info">Published At 2020</li>
+                </ul>
+            </div>
+            <div class="book">
+                <img src="images/react-book.jpg" alt="JavaScript Book" class="book-img" width="128">
+                <div class="book-buy">
+                    <h2>
+                        <img src="images/money.png" alt="Cost" width="20">
+                        $39
+                    </h2>
+                    <button onclick="buy_popup('react')">
+                        <img src="images/shop.png" alt="Shop" width="20">
+                        Buy Now!
+                    </button>
+                </div>
+                <h3 class="book-title cyan-box">Road To React</h3>
+                <ul class="book-info-list">
+                    <li class="book-info seprator">By Alex Banks</li>
+                    <li class="book-info">First Edition</li>
+                    <li class="book-info">Published At 2017</li>
+                </ul>
+            </div>
+            <div class="book">
+                <img src="images/go-book.png" alt="JavaScript Book" class="book-img" width="128">
+                <div class="book-buy">
+                    <h2>
+                        <img src="images/money.png" alt="Cost" width="20">
+                        $36
+                    </h2>
+                    <button onclick="buy_popup('go')">
+                        <img src="images/shop.png" alt="Shop" width="20">
+                        Buy Now!
+                    </button>
+                </div>
+                <h3 class="book-title dark-box">Introducing GO</h3>
+                <ul class="book-info-list">
+                    <li class="book-info seprator">By Jon Bodner</li>
+                    <li class="book-info">First Edition</li>
+                    <li class="book-info">Published At 2021</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#lectures">Lectures</a></li>
+            <li><a href="#related-books">Related Books</a></li>
+            <li><a href="#footer">About</a></li>
+        </ul>
+        <div>MajidNami &copy; 2022</div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
